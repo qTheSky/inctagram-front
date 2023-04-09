@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { getStaticPaths, makeStaticProps } from '@/shared/lib/getStatic'
 import { AppLink } from '@/shared/ui/AppLink/AppLink'
+import Link from 'next/link'
 
 export default function Home () {
     return (
@@ -13,7 +14,7 @@ export default function Home () {
             </Head>
             <main>
                 <>
-                    <AppLink href={'/Congratulations'}>Congratulations</AppLink>
+                    <Link href={'/confirm-email'}>Congratulations</Link>
                     <AppLink href={'/Verification'}>Verification</AppLink>
                     <AppLink href={'/auth/registration'}>registration</AppLink>
                 </>
